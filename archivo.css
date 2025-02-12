@@ -32,7 +32,8 @@
     align-items: center;
     padding: 1px;
     justify-content: center;
-  }
+    gap: 15px;
+}
   
   .img1 .foto1 {
     border-radius: 20px;
