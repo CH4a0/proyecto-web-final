@@ -89,7 +89,35 @@ Estudios FP 2021-2023
     <section class="w3-content w3-container w3-padding-64">
       <h3 class="w3-center">MIS PROYECTOS</h3>
       <p class="w3-center"><em>Aqui algunos de los ultimos proyectos hechos <br></em></p><br>
+      <!-- Carrusel -->
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img src="./img/formulario.jpeg" style="width:100%">
+          <div class="text">Formulario</div>
+        </div>
 
+        <div class="mySlides fade">
+          <img src="./img/proyectoweb.jpg" style="width:100%">
+          <div class="text">Proyecto Web</div>
+        </div>
+
+        <div class="mySlides fade">
+          <img src="./img/Plantilla.jpeg" class="custom-image">
+          <div class="text">Plantilla</div>
+        </div>
+
+        <!-- Botones de navegación -->
+        <button id="prev">&#10094;</button>
+        <button id="next">&#10095;</button>
+      </div>
+
+      <!-- Indicadores (puntos) -->
+      <div class="dots-container">
+        <span class="dot" onclick="goToSlide(1)"></span>
+        <span class="dot" onclick="goToSlide(2)"></span>
+        <span class="dot" onclick="goToSlide(3)"></span>
+      </div>
+      <script src="./java.js"></script>
       <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
       <div class="w3-row-padding w3-center">
         <div class="w3-col m3">
