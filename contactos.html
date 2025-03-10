@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>pagina1</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <!-- fontawesome es una biblioteca popular que proporciona iconos para usarlo en tpaginas web. -->
+  <link rel="stylesheet" href="./archivo.css">
+  <!-- script para el menu responsive o dinamico -->
+  <script>
+    function myFunction() {
+      var x = document.getElementById("miTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <header>
+    <div class="topnav" id="miTopnav">
+      <nav>
+      <a class="uno" href="./index.html">Inicio</a>
+      <a href="./index.html">Portfolio</a>
+      <a href="./contactos.html">Contacto</a>
+      <div class="buscador">
+        <form action="/action_page.php">
+          <input type="text" placeholder="Buscar.." name="search">
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </nav>
+    </div>
+  </header>
+  <div class="img1">
+    <img class="foto1" src="./img/portfolio.jpg" alt="no muestra">
+  </div>
+  <main>
+    <h1>Formulario</h1>
+    <div class="contenedor">
+
+      <form action="/action_page.php">
+        <fieldset>
+          <legend>Información personal</legend>
+          <!-- nombre y apellido -->
+          <label for="pnombre">Nombre:</label><br>
+          <input class="A" type="text" id="fname" name="nombre" placeholder="Introduce tu nombre"><br>
+          <label for="apellido">Apellido</label><br>
+          <input class="A" type="text" id="lname" name="apellido" placeholder="Introduce tu apellido"><br><br>
+          <!--required para que sea un requisito-->
+          <!-- Información de contacto -->
+        </fieldset>
+        <fieldset>
+          <legend>Información de contacto</legend>
+          <!-- correo Electrónico -->
+          <label for="email">Correo Electrónico:</label><br>
+          <input class="A" type="email" id="email" name="email" placeholder="correo@g.educaand.es" required
+            pattern=".+@g\.educaand\.es" title="Introduce un correo con el patrón g.educaand.es">
+          <br><br>
+          <label for="telefono">Número de Teléfono:</label><br>
+          <input class="A" type="tel" id="telefono" name="telefono" placeholder="Por ejemplo +34 642 234 543" required
+            pattern="\+[0-9]{2}\s\d{9}" title="Introduce un formato +34 123456789"><br><br>
+          <label for="direccion">Dirección:</label><br>
+          <textarea id="direccion" name="direccion" rows="4" cols="40"
+            placeholder="Ingresa tu dirección completa"></textarea><br>
+        </fieldset>
+        <fieldset>
+          <label for="aceptar_terminos"> <input type="checkbox" id="aceptar_terminos" name="aceptar_terminos" required>
+            Acepto los términos y condiciones </label><br><br>
+          <input class="boton" type="submit" value="Enviar">
+        </fieldset>
+      </form>
+    </div>
+  </main>
+  <footer>
+    <h3 class="textofooter">Página web creado en 2024</h3>
+    <a href="#" class="fa fa-twitter"></a>
+    <a href="#" class="fa fa-linkedin"></a>
+    <a href="#" class="fa fa-youtube"></a>
+  </footer>
+</body>
+
+</html>

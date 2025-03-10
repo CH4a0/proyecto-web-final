@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PortfolioWeb</title>
+  <!-- librerias para css provenido de W3Schools para facilitar el css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <!-- Favicon de la página -->
+  <link rel="icon" href="./img/Monoagua.ico" type="image/x-icon">
+  <!-- fontawesome es una biblioteca popular que proporciona iconos para usarlo en tpaginas web. -->
+  <link rel="stylesheet" href="./archivo.css">
+  <!-- script para el menu responsive o dinamico -->
+  <script>
+    // funcion para el menu responsivo provenido de W3schoolss
+    function myFunction() {
+      var x = document.getElementById("miTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+  <!-- estilo para un desplazamiento suave -->
+  <style> html { scroll-behavior: smooth; } </style>
+</head>
+
+<body>
+  <header>
+    <nav class="topnav" id="miTopnav">
+      <a class="uno" href="./index.html">Inicio</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="./contactos.html">Contacto</a>
+      <form class="buscador" action="/action_page.php">
+        <input type="text" placeholder="Buscar.." name="search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </nav>
+  </header>
+  <section class="img1">
+    <img class="foto1" src="./img/portfolio.jpg" alt="no muestra">
+  </section>
+  <main>
+    <!-- Container (About Section) -->
+    <section class="contenido" id="portfolio">
+      <hr>
+      <h3>ABOUT ME</h3>
+      <article>
+        <p><em>Me gusta la programacion</em></p>
+        <aside>
+          <img class="img2" src="./img/img2.jpg" alt="">
+        </aside>
+        <p>Hola Soy Chao, y os presento mi supuesto nuevo portfolio web. Aquí encontrarás una muestra de mi página, mis proyectos y algo sobre mí.
+          Me gusta explorar nuevas ideas y aprender cosas nuevas. En este espacio, encontrarás algunos de mis intereses y proyectos personales. En este portfolio, podrás explorar algunos de los proyectos en los que hice.
+        </p>
+      </article>
+      <p>Soy una persona con ganas de aprender. Me esfuerzo por trabajar
+        de manera efectiva en equipo, siendo responsable y puntual.
+        Tengo fuerte deseo con la mejora continua y el cumplimiento de
+        objetivos.
+       Hice prácticas de empresas FCT en AvanzaFibra durante 2
+        meses sobre como montar fibras, fusión de cables... Titulos: Título de Educación Obligatorio
+Estudios ESO y Título de técnico grado de medio de sistemas microinformaticos
+Estudios FP 2021-2023
+        Lorem ipsum incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </section>
+    <br><br><br><br>
+    <p class="w3-large w3-center w3-padding-16">Idiomas:</p>
+    <p class="w3-wide"><i class="fa fa-camera"></i>Castellano</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">80%</div>
+    </div>
+    <p class="w3-wide"><i class="fa fa-laptop"></i>English</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:50%">50%</div>
+    </div>
+    <p class="w3-wide"><i class="fa fa-photo"></i>Chinese</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:40%">40%</div>
+    </div>
+    <section class="w3-content w3-container w3-padding-64">
+      <h3 class="w3-center">MIS PROYECTOS</h3>
+      <p class="w3-center"><em>Aqui algunos de los ultimos proyectos hechos <br></em></p><br>
+
+      <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+      <div class="w3-row-padding w3-center">
+        <div class="w3-col m3">
+          <img src="./img/formulario.jpeg" style="width:100%" class="w3-hover-opacity" alt="No sale">
+        </div>
+
+        <div class="w3-col m3">
+          <img src="./img/proyectoweb.jpg" style="width:100%" class="w3-hover-opacity" alt="no hay proyectoweb">
+        </div>
+        <div class="w3-col m3">
+          <img src="./img/Plantilla.jpeg" style="width:100%" class="w3-hover-opacity" alt="no hay proyectoweb">
+        </div>
+        <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">Más</button>
+      </div>
+    </section>
+    <section id="projects" class="section">
+      <h2>Proyectos</h2>
+      <table>
+          <thead>
+              <tr>
+                  <th>Proyecto</th>
+                  <th>Descripción</th>
+                  <th>Enlace</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>Proyecto 1</td>
+                  <td>Proyecto web del año pasado</td>
+                  <td><a href="https://ch4a0.github.io/ProyectowebC/HTML/index.html" target="_blank">GitHub</a></td>
+              </tr>
+              <tr>
+                  <td>Proyecto 2</td>
+                  <td>Formulario</td>
+                  <td><a href="https://github.com/ICV-24-25/html-formulario-registro-CH4a0" target="_blank">GitHub</a></td>
+              </tr>
+              <tr>
+                <td>Proyecto 3</td>
+                <td>Plantilla recuperación</td>
+                <td><a href="https://ch4a0.github.io/AW-Chao/" target="_blank">GitHub</a></td>
+            </tr>
+            <!-- un video sobre el portfolio -->
+            <video width="1300" height="720" controls>
+              <source src="./video1.mp4" type="video/mp4">
+            </video>
+            <!-- video iframe -->
+            <iframe width="1300" height="720" src="https://www.youtube.com/embed/iG2jotQo9NI?si=CG7eg7wFQq6Irgrh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </tbody>
+      </table>
+  </section>
+  <img src="./img/Plantilla.jpeg" alt="no aparece">
+  <br><br><br><br>
+  </main>
+  <footer>
+    <h3 class="textofooter">Página web creado en 2024</h3>
+    <a href="#" class="fa fa-twitter"></a>
+    <a href="#" class="fa fa-linkedin"></a>
+    <a href="#" class="fa fa-youtube"></a>
+  </footer>
+</body>
+
+</html>
