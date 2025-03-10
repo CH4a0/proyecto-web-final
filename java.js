@@ -2,6 +2,7 @@ let currentIndex = 0;
 const slides = document.querySelectorAll('.mySlides');
 const dots = document.querySelectorAll('.dot');
 
+// Mostrar la diapositiva actual
 function showSlide(index) {
   slides.forEach((slide, i) => {
     slide.style.display = i === index ? 'block' : 'none';
@@ -11,19 +12,26 @@ function showSlide(index) {
   });
 }
 
+// Cambiar diapositiva con botones
 function changeSlide(step) {
   currentIndex = (currentIndex + step + slides.length) % slides.length;
   showSlide(currentIndex);
 }
 
+// Ir a una diapositiva específica
 function goToSlide(index) {
   currentIndex = index - 1;
   showSlide(currentIndex);
 }
 
-// Event listeners for external buttons
+// Avanzar automáticamente
+setInterval(() => {
+  changeSlide(1); // Moverse a la siguiente diapositiva
+}, 4000); // Cambia cada 4000 ms (4 segundos)
+
+// Event listeners para los botones de navegación
 document.getElementById('prev').addEventListener('click', () => changeSlide(-1));
 document.getElementById('next').addEventListener('click', () => changeSlide(1));
 
-// Initialize the first slide
+// Inicializar la primera diapositiva
 showSlide(currentIndex);
