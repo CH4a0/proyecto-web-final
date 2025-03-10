@@ -123,6 +123,13 @@ main {
   margin: 100px 20px;
 }
 
+/* Centrando imágenes, iframes y videos */
+img, iframe, video {
+  display: block;
+  margin: 0 auto; /* Centra horizontalmente */
+  max-width: 100%; /* Evita que excedan el ancho del contenedor */
+}
+
 .slideshow-container {
   display: grid;
   place-items: center;
@@ -317,7 +324,7 @@ textarea {
 .fa-youtube:hover {
   background-color: #bb0000;
   transform: scale(1.1);
-  border-radius: 50%
+  border-radius: 50%;
 }
 
 /* Media Queries para dispositivos pequeños */
@@ -353,6 +360,7 @@ textarea {
       display: block;
       text-align: left;
   }
+
   footer {
     flex-direction: column; /* Cambia a diseño vertical */
     text-align: center;
